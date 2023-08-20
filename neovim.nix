@@ -22,6 +22,14 @@
           }
         '';
       }
+      {
+        plugin = telescope-nvim;
+        type = "lua";
+        config = ''
+          local builtin = require('telescope.builtin')
+          vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+        '';
+      }
       nvim-treesitter-parsers.c
       nvim-treesitter-parsers.go
       nvim-treesitter-parsers.gitcommit

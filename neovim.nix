@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    nodePackages.pyright
+    gopls
+  ];
   programs.neovim = {
     enable = true;
     defaultEditor = true;

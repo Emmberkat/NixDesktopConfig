@@ -30,6 +30,24 @@
           vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
         '';
       }
+      nvim-lspconfig
+      nvim-cmp
+      cmp-nvim-lsp
+      {
+        plugin = lsp-zero-nvim;
+        type = "lua";
+        config = ''
+          local lsp = require('lsp-zero').preset({})
+  
+          lsp.on_attach(function(client, bufnr)
+            lsp.default_keymaps({buffer = bufnr})
+          end)
+  
+          lsp.setup_servers({'gopls', 'pyright'})
+  
+          lsp.setup()
+        '';
+      }
       nvim-treesitter-parsers.c
       nvim-treesitter-parsers.go
       nvim-treesitter-parsers.gitcommit

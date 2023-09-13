@@ -79,6 +79,7 @@
       nvim-treesitter-parsers.gitcommit
       nvim-treesitter-parsers.gitignore
       nvim-treesitter-parsers.git_rebase
+      nvim-treesitter-parsers.kotlin
       nvim-treesitter-parsers.lua
       nvim-treesitter-parsers.nix
       nvim-treesitter-parsers.python

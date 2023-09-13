@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     nodePackages.pyright
     gopls
+    kotlin-language-server
   ];
   programs.neovim = {
     enable = true;
@@ -41,6 +42,7 @@
           local lspconfig = require('lspconfig')
           lspconfig.pyright.setup {}
           lspconfig.gopls.setup {}
+          lspconfig.kotlin_language_server.setup {}
           
           vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
           vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

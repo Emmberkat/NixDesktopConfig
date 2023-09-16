@@ -16,6 +16,16 @@
     '';
     plugins = with pkgs.vimPlugins; [
       {
+        plugin = onedark-nvim;
+        type = "lua";
+        config = ''
+          require('onedark').setup {
+            style = 'deep'
+          }
+          require('onedark').load()
+        '';
+      }
+      {
         plugin = nvim-treesitter;
         type = "lua";
         config = ''

@@ -6,6 +6,7 @@
     kotlin-language-server
     jdt-language-server
     ocamlPackages.lsp
+    clang-tools
   ];
   programs.neovim = {
     enable = true;
@@ -57,6 +58,7 @@
           lspconfig.kotlin_language_server.setup {}
           lspconfig.jdtls.setup {}
           lspconfig.ocamllsp.setup {}
+          lspconfig.clangd.setup {}
           
           vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
           vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

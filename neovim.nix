@@ -5,7 +5,7 @@
     gopls
     kotlin-language-server
     jdt-language-server
-    ocamlPackages.lsp
+    ocamlPackages.ocaml-lsp
     clang-tools
   ];
   programs.neovim = {

@@ -100,6 +100,7 @@
       nvim-treesitter-parsers.kotlin
       nvim-treesitter-parsers.lua
       nvim-treesitter-parsers.nix
+      nvim-treesitter-parsers.ocaml
       nvim-treesitter-parsers.python
       nvim-treesitter-parsers.query
       nvim-treesitter-parsers.rust

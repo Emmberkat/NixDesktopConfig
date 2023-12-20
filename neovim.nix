@@ -6,6 +6,7 @@
     kotlin-language-server
     jdt-language-server
     ocamlPackages.ocaml-lsp
+    ocamlPackages.ocamlformat
     clang-tools
   ];
   programs.neovim = {

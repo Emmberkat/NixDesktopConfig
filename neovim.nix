@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     nodePackages.pyright
+    go
     gopls
     kotlin-language-server
     jdt-language-server

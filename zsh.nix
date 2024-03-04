@@ -7,6 +7,7 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
+      theme = "gianu";
       plugins = [
         "git"
         "sudo"

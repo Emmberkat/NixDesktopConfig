@@ -11,18 +11,31 @@ in
   config = mkIf cfg.enable {
     home.packages = with pkgs; [
       fzf
+      powerline-fonts
     ];
-    programs.zsh = {
-      enable = true;
-      oh-my-zsh = {
+
+    fonts.fontconfig.enable = true;
+
+    programs = {
+      starship = {
         enable = true;
-        theme = "gianu";
-        plugins = [
-          "git"
-          "sudo"
-          "ssh-agent"
-          "fzf"
-        ];
+        settings = {
+          add_newline = false;
+          line_break.disabled = true;
+        };
+      };
+      zsh = {
+        enable = true;
+        oh-my-zsh = {
+          enable = true;
+          theme = "gianu";
+          plugins = [
+            "git"
+            "sudo"
+            "ssh-agent"
+            "fzf"
+          ];
+        };
       };
     };
   };

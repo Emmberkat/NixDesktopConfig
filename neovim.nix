@@ -10,6 +10,7 @@
     ocamlPackages.ocamlformat
     clang-tools
     nil
+    nixpkgs-fmt
   ];
   programs.neovim = {
     enable = true;

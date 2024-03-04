@@ -5,7 +5,7 @@ let
 in
 {
   options.mthwate.zsh.enable = mkEnableOption "zsh" // {
-    enable = true;
+    default = true;
   };
 
   config = mkIf cfg.enable {

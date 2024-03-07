@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.zsh;
+  cfg = config.mthwate.shell;
 in
 {
-  options.mthwate.zsh.enable = mkEnableOption "zsh" // {
+  options.mthwate.shell.enable = mkEnableOption "shell" // {
     default = true;
   };
 
@@ -24,6 +24,7 @@ in
           line_break.disabled = true;
         };
       };
+      bash.enable = true;
       zsh = {
         enable = true;
         oh-my-zsh = {

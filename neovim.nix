@@ -125,6 +125,7 @@ in
         nvim-treesitter-parsers.gitcommit
         nvim-treesitter-parsers.gitignore
         nvim-treesitter-parsers.git_rebase
+        nvim-treesitter-parsers.html
         nvim-treesitter-parsers.kotlin
         nvim-treesitter-parsers.lua
         nvim-treesitter-parsers.nix
@@ -132,6 +133,7 @@ in
         nvim-treesitter-parsers.python
         nvim-treesitter-parsers.query
         nvim-treesitter-parsers.rust
+        nvim-treesitter-parsers.typescript
         nvim-treesitter-parsers.vim
         nvim-treesitter-parsers.vimdoc
         nvim-treesitter-context

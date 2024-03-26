@@ -21,6 +21,7 @@ in
       clang-tools
       nil
       nixpkgs-fmt
+      nodePackages.typescript-language-server
       nodePackages.vscode-html-languageserver-bin
     ];
     programs.neovim = {
@@ -76,6 +77,7 @@ in
             lspconfig.ocamllsp.setup {}
             lspconfig.clangd.setup {}
             lspconfig.html.setup {}
+            lspconfig.tsserver.setup {}
             lspconfig.nil_ls.setup {
               settings = {
                 ['nil'] = {

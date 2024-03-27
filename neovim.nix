@@ -22,7 +22,7 @@ in
       nil
       nixpkgs-fmt
       nodePackages.typescript-language-server
-      nodePackages.vscode-html-languageserver-bin
+      vscode-langservers-extracted
     ];
     programs.neovim = {
       enable = true;

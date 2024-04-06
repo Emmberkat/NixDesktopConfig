@@ -23,6 +23,7 @@ in
       nixpkgs-fmt
       nodePackages.typescript-language-server
       vscode-langservers-extracted
+      rust-analyzer
     ];
     programs.neovim = {
       enable = true;
@@ -78,6 +79,7 @@ in
             lspconfig.clangd.setup {}
             lspconfig.html.setup {}
             lspconfig.tsserver.setup {}
+            lspconfig.rust_analyzer.setup {}
             lspconfig.nil_ls.setup {
               settings = {
                 ['nil'] = {

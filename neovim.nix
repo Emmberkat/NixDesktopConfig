@@ -24,6 +24,7 @@ in
       nodePackages.typescript-language-server
       vscode-langservers-extracted
       rust-analyzer
+      rustfmt
     ];
     programs.neovim = {
       enable = true;

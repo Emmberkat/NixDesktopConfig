@@ -25,6 +25,7 @@ in
       vscode-langservers-extracted
       rust-analyzer
       rustfmt
+      rustc
     ];
     programs.neovim = {
       enable = true;

@@ -37,6 +37,7 @@ in
         set number relativenumber
       '';
       plugins = with pkgs.vimPlugins; [
+        vim-fugitive
         {
           plugin = onedark-nvim;
           type = "lua";

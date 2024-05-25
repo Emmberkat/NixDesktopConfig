@@ -37,7 +37,13 @@ in
         set number relativenumber
       '';
       plugins = with pkgs.vimPlugins; [
-        vim-fugitive
+        {
+          plugin = gitsigns-nvim;
+          type = "lua";
+          config = ''
+            require('gitsigns').setup()
+          '';
+        }
         {
           plugin = onedark-nvim;
           type = "lua";

@@ -45,6 +45,14 @@ in
           '';
         }
         {
+          plugin = neogit;
+          type = "lua";
+          config = ''
+            local neogit = require('neogit')
+            neogit.setup {}
+          '';
+        }
+        {
           plugin = onedark-nvim;
           type = "lua";
           config = ''

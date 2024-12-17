@@ -9,6 +9,7 @@ in
   };
 
   config = mkIf cfg.enable {
+    mthwate.git.enable = true;
     home.packages = with pkgs; [
       ripgrep
       nodePackages.pyright

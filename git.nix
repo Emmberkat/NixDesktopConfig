@@ -12,12 +12,7 @@ in
     programs = {
       git = {
         enable = true;
-        userName = "Matthew Benkart";
-        userEmail = "matthewbenkart@gmail.com";
         lfs.enable = true;
-        extraConfig = {
-          init.defaultBranch = "main";
-        };
       };
     };
   };

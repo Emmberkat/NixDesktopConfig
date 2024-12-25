@@ -27,6 +27,7 @@ in
       rust-analyzer
       rustfmt
       rustc
+      terraform-ls
     ];
     programs.neovim = {
       enable = true;
@@ -98,6 +99,7 @@ in
             lspconfig.html.setup {}
             lspconfig.tsserver.setup {}
             lspconfig.rust_analyzer.setup {}
+            lspconfig.terraformls.setup {}
             lspconfig.nil_ls.setup {
               settings = {
                 ['nil'] = {

@@ -12,7 +12,7 @@ in
     mthwate.git.enable = true;
     home.packages = with pkgs; [
       ripgrep
-      nodePackages.pyright
+      pyright
       go
       gopls
       kotlin-language-server

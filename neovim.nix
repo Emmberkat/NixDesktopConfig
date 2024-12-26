@@ -97,7 +97,7 @@ in
             lspconfig.ocamllsp.setup {}
             lspconfig.clangd.setup {}
             lspconfig.html.setup {}
-            lspconfig.tsserver.setup {}
+            lspconfig.ts_ls.setup {}
             lspconfig.rust_analyzer.setup {}
             lspconfig.terraformls.setup {}
             lspconfig.nil_ls.setup {

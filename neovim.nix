@@ -28,6 +28,7 @@ in
       rustfmt
       rustc
       terraform-ls
+      yaml-language-server
     ];
     programs.neovim = {
       enable = true;
@@ -100,6 +101,7 @@ in
             lspconfig.ts_ls.setup {}
             lspconfig.rust_analyzer.setup {}
             lspconfig.terraformls.setup {}
+            lspconfig.yamlls.setup {}
             lspconfig.nil_ls.setup {
               settings = {
                 ['nil'] = {

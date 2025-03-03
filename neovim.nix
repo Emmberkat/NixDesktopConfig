@@ -29,6 +29,7 @@ in
       rustc
       terraform-ls
       yaml-language-server
+      gleam
     ];
     programs.neovim = {
       enable = true;
@@ -102,6 +103,7 @@ in
             lspconfig.rust_analyzer.setup {}
             lspconfig.terraformls.setup {}
             lspconfig.yamlls.setup {}
+            lspconfig.gleam.setup {}
             lspconfig.nil_ls.setup {
               settings = {
                 ['nil'] = {

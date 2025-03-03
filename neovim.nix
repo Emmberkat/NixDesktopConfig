@@ -162,6 +162,7 @@ in
         nvim-treesitter-parsers.typescript
         nvim-treesitter-parsers.vim
         nvim-treesitter-parsers.vimdoc
+        nvim-treesitter-parsers.gleam
         nvim-treesitter-context
         cmp-nvim-lsp
         vim-vsnip

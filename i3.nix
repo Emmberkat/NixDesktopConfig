@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.i3;
+  cfg = config.emmberkat.i3;
 in
 {
-  options.mthwate.i3.enable = mkEnableOption "i3";
+  options.emmberkat.i3.enable = mkEnableOption "i3";
 
   config = mkIf cfg.enable {
     xsession.windowManager.i3 = {

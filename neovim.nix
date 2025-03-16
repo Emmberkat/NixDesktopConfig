@@ -1,15 +1,15 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.neovim;
+  cfg = config.emmberkat.neovim;
 in
 {
-  options.mthwate.neovim.enable = mkEnableOption "neovim" // {
+  options.emmberkat.neovim.enable = mkEnableOption "neovim" // {
     default = true;
   };
 
   config = mkIf cfg.enable {
-    mthwate.git.enable = true;
+    emmberkat.git.enable = true;
     home.packages = with pkgs; [
       ripgrep
       pyright

@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.git;
+  cfg = config.emmberkat.git;
 in
 {
-  options.mthwate.git.enable = mkEnableOption "shell" // {
+  options.emmberkat.git.enable = mkEnableOption "shell" // {
     default = true;
   };
 

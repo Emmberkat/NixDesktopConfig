@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.shell;
+  cfg = config.emmberkat.shell;
 in
 {
-  options.mthwate.shell.enable = mkEnableOption "shell" // {
+  options.emmberkat.shell.enable = mkEnableOption "shell" // {
     default = true;
   };
 

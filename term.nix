@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 with lib;
 let
-  cfg = config.mthwate.term;
+  cfg = config.emmberkat.term;
 in
 {
-  options.mthwate.term.enable = mkEnableOption "term";
+  options.emmberkat.term.enable = mkEnableOption "term";
 
   config = mkIf cfg.enable {
     home.packages = with pkgs; [

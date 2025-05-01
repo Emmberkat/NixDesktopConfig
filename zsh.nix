@@ -24,6 +24,10 @@ in
           add_newline = false;
           line_break.disabled = true;
         };
+        presets = {
+          "bracketed-segments"
+          "plain-text-symbols"
+        };
       };
       bash.enable = true;
       zsh = {

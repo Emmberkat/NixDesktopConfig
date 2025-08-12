@@ -24,7 +24,7 @@ in
       nixpkgs-fmt
       nodePackages.typescript-language-server
       vscode-langservers-extracted
-      rust-analyzer
+      #rust-analyzer
       rustfmt
       rustc
       terraform-ls
